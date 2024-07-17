@@ -9,7 +9,7 @@ namespace DimmableLights
     {
         internal const string PLUGIN_GUID = "id107.dimmablelights";
         internal const string PLUGIN_NAME = "DimmableLights";
-        internal const string PLUGIN_VERSION = "0.0.0";
+        internal const string PLUGIN_VERSION = "0.0.1";
     }
 
     [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]

@@ -1,9 +1,8 @@
 ﻿using CG.Game;
+using CG.Space;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace DimmableLights
@@ -15,7 +14,7 @@ namespace DimmableLights
 
         internal static void SetShipLights(object sender, EventArgs e)
         {
-            shipLights = ClientGame.Current?.PlayerShip?.GetComponentsInChildren<Light>()?.ToDictionary(light => light, light => (light.color, new Color(0, 0, 0, 0)));
+            shipLights = ClientGame.Current?.PlayerShip?.GameObject?.GetComponentsInChildren<Light>()?.ToDictionary(light => light, light => (light.color, new Color(0, 0, 0, 0)));
         }
 
         internal static void CheckLights(object sender, EventArgs e)
@@ -27,6 +26,11 @@ namespace DimmableLights
 
             KeyValuePair<Light, (Color, Color)> pair = shipLights.ElementAt(lightIndex);
             Light light = pair.Key;
+            if (light == null)
+            {
+                shipLights = ClientGame.Current?.PlayerShip?.GameObject?.GetComponentsInChildren<Light>()?.ToDictionary(light => light, light => (light.color, new Color(0, 0, 0, 0)));
+                return;
+            }
             (Color defaultColor, Color lastColor) = pair.Value;
 
             if (light.color != lastColor)
