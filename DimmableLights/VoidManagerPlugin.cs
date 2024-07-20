@@ -1,9 +1,4 @@
-﻿using CG.Game;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-using VoidManager.MPModChecks;
+﻿using VoidManager.MPModChecks;
 
 namespace DimmableLights
 {
@@ -11,8 +6,6 @@ namespace DimmableLights
     {
         public VoidManagerPlugin()
         {
-            VoidManager.Events.Instance.HostStartSession += LightManager.SetShipLights;
-            VoidManager.Events.Instance.JoinedRoom += LightManager.SetShipLights;
             VoidManager.Events.Instance.LateUpdate += LightManager.CheckLights;
         }
 
