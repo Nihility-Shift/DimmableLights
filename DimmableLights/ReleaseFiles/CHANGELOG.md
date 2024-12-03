@@ -1,11 +1,14 @@
+## 0.0.4
+- Fixed README.
+
 ## 0.0.3
-- Updated for Void Crew 1.0.0
+- Updated for Void Crew 1.0.0.
 
 ## 0.0.2
-- Fixed lights not dimming for non-hosts
+- Fixed lights not dimming for non-hosts.
 
 ## 0.0.1
-- Fixed several exceptions
+- Fixed several exceptions.
 
 ## 0.0.0
-- Initial release
+- Initial release.
