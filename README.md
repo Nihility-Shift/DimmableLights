@@ -18,7 +18,8 @@ Requires:  BepInEx-BepInExPack-5.4.2100, VoidCrewModdingTeam-VoidManager-1.2.4
 
 ### 🎮 Client Usage
 
-- 
+- Simply Install
+- Configure at F5 > Mod Settings > Dimmable Lights
 
 ### 👥 Multiplayer Functionality
 
