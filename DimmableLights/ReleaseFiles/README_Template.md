@@ -23,18 +23,8 @@ Requires: [Dependencies]
 
 ### 👥 Multiplayer Functionality
 
-# Note to mod developer: Remove all but those which match, and describe any custom functionality.
 - ✅ Client
   - Only the client needs this mod.
-- ✅ Host
-  - Only the host needs this mod.
-- ✅ Session
-  - Requires the room to be marked as Mod_Session for functionality.
-  - Requires the room to be marked as Mod_Session for joining.
-  - Marks the room as Mod_Session when starting session as host.
-  - Marks the room as Mod_Session when hosting.
-- ✅ All
-  - All players must have this mod installed.
 
 ---------------------
 
