@@ -1,3 +1,6 @@
+## 0.0.5
+- Fixed for Void Crew 1.1.0.
+
 ## 0.0.4
 - Fixed README.
 
